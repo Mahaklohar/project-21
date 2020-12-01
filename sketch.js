@@ -6,9 +6,9 @@ var Damage;
 function setup() {
   createCanvas(1600,400);
 
-  speed = Math.random(223, 321);
-  weight = Math.random(30, 52);
-  thickness = Math.random(22, 83);
+  speed = Math.round(random(223, 321));
+  weight = Math.round(random(30, 52));
+  thickness = Math.round(random(22, 83));
 
   bullet = createSprite(50, 200, 60, 3);
   bullet.velocityX = speed;
